@@ -1,902 +1,1082 @@
 [
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#Access",
-    "Label": "access",
-    "Description": "Any kind of access to a resource. Don't use this, use R W and RW"
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#Access",
+    "label": "access",
+    "description": "Any kind of access to a resource. Don't use this, use R W and RW"
   },
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#Append",
-    "Label": "append",
-    "Description": "Append accesses are specific write access which only add information, and do not remove information. For text files, for example, append access allows bytes to be added onto the end of the file. For RDF graphs, Append access allows adds triples to the graph but does not remove any. Append access is useful for dropbox functionality. Dropbox can be used for link notification, which the information added is a notification that a some link has been made elsewhere relevant to the given resource."
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#Append",
+    "label": "append",
+    "description": "Append accesses are specific write access which only add information, and do not remove information. For text files, for example, append access allows bytes to be added onto the end of the file. For RDF graphs, Append access allows adds triples to the graph but does not remove any. Append access is useful for dropbox functionality. Dropbox can be used for link notification, which the information added is a notification that a some link has been made elsewhere relevant to the given resource."
   },
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#AuthenticatedAgent",
-    "Label": "Anyone authenticated",
-    "Description": "A class of agents who have been authenticated. In other words, anyone can access this resource, but not anonymously. The social expectation is that the authentication process will provide an identify and a name, or pseudonym. (A new ID should not be minted for every access: the intent is that the user is able to continue to use the ID for continues interactions with peers, and for example to develop a reputation)"
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#AuthenticatedAgent",
+    "label": "Anyone authenticated",
+    "description": "A class of agents who have been authenticated. In other words, anyone can access this resource, but not anonymously. The social expectation is that the authentication process will provide an identify and a name, or pseudonym. (A new ID should not be minted for every access: the intent is that the user is able to continue to use the ID for continues interactions with peers, and for example to develop a reputation)"
   },
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#Authorization",
-    "Label": "authorization",
-    "Description": "An element of access control, allowing agent to agents access of some kind to resources or classes of resources"
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#Authorization",
+    "label": "authorization",
+    "description": "An element of access control, allowing agent to agents access of some kind to resources or classes of resources"
   },
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#Control",
-    "Label": "control",
-    "Description": "Allows read/write access to the ACL for the resource(s)"
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#Control",
+    "label": "control",
+    "description": "Allows read/write access to the ACL for the resource(s)"
   },
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#Origin",
-    "Label": "Origin",
-    "Description": "An Origin is basically a web site (Note WITHOUT the trailing slash after the domain name and port in its URI) and is the basis for controlling access to data by web apps in the Same Origin Model of web security. All scripts from the same origin are given the same right."
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#Origin",
+    "label": "Origin",
+    "description": "An Origin is basically a web site (Note WITHOUT the trailing slash after the domain name and port in its URI) and is the basis for controlling access to data by web apps in the Same Origin Model of web security. All scripts from the same origin are given the same right."
   },
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#Read",
-    "Label": "read",
-    "Description": "The class of read operations"
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#Read",
+    "label": "read",
+    "description": "The class of read operations"
   },
   {
-    "Uri": "http://www.w3.org/ns/auth/acl#Write",
-    "Label": "write",
-    "Description": ""
+    "vocabulary": 2301,
+    "uri": "http://www.w3.org/ns/auth/acl#Write",
+    "label": "write",
+    "description": ""
   },
   {
-    "Uri": "http://purl.org/ontology/storyline/Attribution",
-    "Label": "Attribution",
-    "Description": "Attribution of a storyline used for attributing the interpretation of the storyline to some agent. An interface class, that doesn't restrict the implementation of an attribution."
+    "vocabulary": 2302,
+    "uri": "http://purl.org/ontology/storyline/Attribution",
+    "label": "Attribution",
+    "description": "Attribution of a storyline used for attributing the interpretation of the storyline to some agent. An interface class, that doesn't restrict the implementation of an attribution."
   },
   {
-    "Uri": "http://purl.org/ontology/storyline/Event",
-    "Label": "Event",
-    "Description": "A newsworthy event. An un-disputable real world event."
+    "vocabulary": 2302,
+    "uri": "http://purl.org/ontology/storyline/Event",
+    "label": "Event",
+    "description": "A newsworthy event. An un-disputable real world event."
   },
   {
-    "Uri": "http://purl.org/ontology/storyline/Storyline",
-    "Label": "Storyline",
-    "Description": "A news storyline."
+    "vocabulary": 2302,
+    "uri": "http://purl.org/ontology/storyline/Storyline",
+    "label": "Storyline",
+    "description": "A news storyline."
   },
   {
-    "Uri": "http://purl.org/ontology/storyline/StorylineComponent",
-    "Label": "StorylineComponent",
-    "Description": "An abstract parent class of storyline components."
+    "vocabulary": 2302,
+    "uri": "http://purl.org/ontology/storyline/StorylineComponent",
+    "label": "StorylineComponent",
+    "description": "An abstract parent class of storyline components."
   },
   {
-    "Uri": "http://purl.org/ontology/storyline/StorylineSlot",
-    "Label": "StorylineSlot",
-    "Description": "A storyline slot, used as a container for storyline components."
+    "vocabulary": 2302,
+    "uri": "http://purl.org/ontology/storyline/StorylineSlot",
+    "label": "StorylineSlot",
+    "description": "A storyline slot, used as a container for storyline components."
   },
   {
-    "Uri": "http://purl.org/ontology/storyline/Topic",
-    "Label": "Topic",
-    "Description": "The topic of a storyline. An interface to some concept in a knowledge domain."
+    "vocabulary": 2302,
+    "uri": "http://purl.org/ontology/storyline/Topic",
+    "label": "Topic",
+    "description": "The topic of a storyline. An interface to some concept in a knowledge domain."
   },
   {
-    "Uri": "http://www.w3.org/ns/dcat#Catalog",
-    "Label": "Catalog",
-    "Description": "A curated collection of metadata about datasets. Typically, a web-based data catalog is represented as a single instance of this class."
+    "vocabulary": 2303,
+    "uri": "http://www.w3.org/ns/dcat#Catalog",
+    "label": "Catalog",
+    "description": "A curated collection of metadata about datasets. Typically, a web-based data catalog is represented as a single instance of this class."
   },
   {
-    "Uri": "http://www.w3.org/ns/dcat#Dataset",
-    "Label": "Dataset",
-    "Description": "A collection of data, published or curated by a single source, and available for access or download in one or more formats. This class represents the actual dataset as published by the dataset publisher. In cases where a distinction between the actual dataset and its entry in the catalog is necessary (because metadata such as modification date and maintainer might differ), the catalog record class can be used for the latter."
+    "vocabulary": 2303,
+    "uri": "http://www.w3.org/ns/dcat#Dataset",
+    "label": "Dataset",
+    "description": "A collection of data, published or curated by a single source, and available for access or download in one or more formats. This class represents the actual dataset as published by the dataset publisher. In cases where a distinction between the actual dataset and its entry in the catalog is necessary (because metadata such as modification date and maintainer might differ), the catalog record class can be used for the latter."
   },
   {
-    "Uri": "http://www.w3.org/ns/dcat#CatalogRecord",
-    "Label": "Catalog Record",
-    "Description": "A record in a data catalog, describing a single dataset. This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset and metadata about the dataset's entry in the catalog. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date should only be specified for the catalog record. Notice that the W3C PROV Ontology allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset."
+    "vocabulary": 2303,
+    "uri": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "label": "Catalog Record",
+    "description": "A record in a data catalog, describing a single dataset. This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset and metadata about the dataset's entry in the catalog. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date should only be specified for the catalog record. Notice that the W3C PROV Ontology allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset."
   },
   {
-    "Uri": "http://www.w3.org/ns/dcat#Distribution",
-    "Label": "Distribution",
-    "Description": "Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset or different endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed. This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether it is a direct download, API, or some through Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."
+    "vocabulary": 2303,
+    "uri": "http://www.w3.org/ns/dcat#Distribution",
+    "label": "Distribution",
+    "description": "Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset or different endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed. This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether it is a direct download, API, or some through Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."
   },
   {
-    "Uri": "http://www.w3.org/ns/dcat#Feed",
-    "Label": "Feed (Deprecated)",
-    "Description": "Represents availability of a dataset as a feed. This term has been deprecated"
+    "vocabulary": 2303,
+    "uri": "http://www.w3.org/ns/dcat#Feed",
+    "label": "Feed (Deprecated)",
+    "description": "Represents availability of a dataset as a feed. This term has been deprecated"
   },
   {
-    "Uri": "http://www.w3.org/ns/dcat#WebService",
-    "Label": "Web Service (Deprecated)",
-    "Description": "Represents a web service that enables access to the data of a dataset. This term has been deprecated"
+    "vocabulary": 2303,
+    "uri": "http://www.w3.org/ns/dcat#WebService",
+    "label": "Web Service (Deprecated)",
+    "description": "Represents a web service that enables access to the data of a dataset. This term has been deprecated"
   },
   {
-    "Uri": "http://www.w3.org/ns/dcat#Download",
-    "Label": "Download (Deprecated)",
-    "Description": "Represents a downloadable distribution of a dataset. This term has been deprecated"
+    "vocabulary": 2303,
+    "uri": "http://www.w3.org/ns/dcat#Download",
+    "label": "Download (Deprecated)",
+    "description": "Represents a downloadable distribution of a dataset. This term has been deprecated"
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsAdjacentTo",
-    "Label": "laneIsAdjacentTo",
-    "Description": "A lane is adjacent to none, one or two other lanes."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsAdjacentTo",
+    "label": "laneIsAdjacentTo",
+    "description": "A lane is adjacent to none, one or two other lanes."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#Meta",
-    "Label": "Meta",
-    "Description": ""
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#Meta",
+    "label": "Meta",
+    "description": ""
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isDerivable",
-    "Label": "isDerivable",
-    "Description": ""
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isDerivable",
+    "label": "isDerivable",
+    "description": ""
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsConnectedTo",
-    "Label": "laneIsConnectedTo",
-    "Description": "Two lanes within a local context can be connected with each other, meaning that they are reachable through a driving maneuver like 'drive straight' or 'turn left'"
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsConnectedTo",
+    "label": "laneIsConnectedTo",
+    "description": "Two lanes within a local context can be connected with each other, meaning that they are reachable through a driving maneuver like 'drive straight' or 'turn left'"
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#dangerSign",
-    "Label": "dangerSign",
-    "Description": "A danger sign indicates some imminant or potential danger and demands attention from the user (e.g. dangerous curve following)"
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#dangerSign",
+    "label": "dangerSign",
+    "description": "A danger sign indicates some imminant or potential danger and demands attention from the user (e.g. dangerous curve following)"
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#orderSign",
-    "Label": "orderSign",
-    "Description": "An order sign indicates an immediate order or prohibition to the driver (e.g. ban on passing or 'do not turn left')."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#orderSign",
+    "label": "orderSign",
+    "description": "An order sign indicates an immediate order or prohibition to the driver (e.g. ban on passing or 'do not turn left')."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#informationSign",
-    "Label": "informationSign",
-    "Description": "An information sign provides useful information about the driving environment to the driver (e.g. beginning of a motorway)."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#informationSign",
+    "label": "informationSign",
+    "description": "An information sign provides useful information about the driving environment to the driver (e.g. beginning of a motorway)."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spatialContext",
-    "Label": "spatialContext",
-    "Description": "A spatial context is the logical type of the road, the own-vehicle is currently driving in and is typically valid for a long timespan (minutes to hours). A spatial context is e.g. a highway or a city."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spatialContext",
+    "label": "spatialContext",
+    "description": "A spatial context is the logical type of the road, the own-vehicle is currently driving in and is typically valid for a long timespan (minutes to hours). A spatial context is e.g. a highway or a city."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#localContext",
-    "Label": "localContext",
-    "Description": "A local context is a specific point (or short segment) within a spatial context, typically valid for a short time (e.g. intersection, level crossing ...)"
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#localContext",
+    "label": "localContext",
+    "description": "A local context is a specific point (or short segment) within a spatial context, typically valid for a short time (e.g. intersection, level crossing ...)"
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
-    "Label": "participantHasRelationToVehicle",
-    "Description": "Every participant has a relationship to the own-vehicle. Relationship-properties are measured relative to the own-vehicle (instead of being absolute with respect to the global origin)."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
+    "label": "participantHasRelationToVehicle",
+    "description": "Every participant has a relationship to the own-vehicle. Relationship-properties are measured relative to the own-vehicle (instead of being absolute with respect to the global origin)."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#roadConditions",
-    "Label": "roadConditions",
-    "Description": "Conditions on a road are weather and day-time dependent. Examples are heavy rain, insufficient lightning conditions and freezing temperatures (leading to black-ice). Road conditions have enormous impact on the recommended driving maneuvers."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#roadConditions",
+    "label": "roadConditions",
+    "description": "Conditions on a road are weather and day-time dependent. Examples are heavy rain, insufficient lightning conditions and freezing temperatures (leading to black-ice). Road conditions have enormous impact on the recommended driving maneuvers."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ContextObject",
-    "Label": "ContextObject",
-    "Description": "Object that occurs in the driving environment and has some impact on the driving task."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ContextObject",
+    "label": "ContextObject",
+    "description": "Object that occurs in the driving environment and has some impact on the driving task."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObjectIsValidForLane",
-    "Label": "trafficObjectIsValidForLane",
-    "Description": "A traffic object is always valid for a lane. One instance exists for every lane, for which the traffic object is valid."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObjectIsValidForLane",
+    "label": "trafficObjectIsValidForLane",
+    "description": "A traffic object is always valid for a lane. One instance exists for every lane, for which the traffic object is valid."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ObjectRelationship",
-    "Label": "ObjectRelationship",
-    "Description": "An object relationship represents a many-to-many-relationship of context objects."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ObjectRelationship",
+    "label": "ObjectRelationship",
+    "description": "An object relationship represents a many-to-many-relationship of context objects."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeature",
-    "Label": "technicalFeature",
-    "Description": "Modern vehicles are equipped with a variety of technical safety and convenience systems, which influence the driving behavior. Absence of an antilock-brake-system (ABS), for instance, demands for more cautious speed-behavior, because of increased breaking distance."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeature",
+    "label": "technicalFeature",
+    "description": "Modern vehicles are equipped with a variety of technical safety and convenience systems, which influence the driving behavior. Absence of an antilock-brake-system (ABS), for instance, demands for more cautious speed-behavior, because of increased breaking distance."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantUseLane",
-    "Label": "participantUseLane",
-    "Description": "Each dynamic traffic participant can use a lane. Motorized participants must use lanes, whereas pedestrians and bikes are not obliged to (or have special lanes not relevant for the own-vehicle)."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantUseLane",
+    "label": "participantUseLane",
+    "description": "Each dynamic traffic participant can use a lane. Motorized participants must use lanes, whereas pedestrians and bikes are not obliged to (or have special lanes not relevant for the own-vehicle)."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
-    "Label": "ownVehicle",
-    "Description": "The own vehicle is the car with the on-board driver assistance system. All other context objects are related to the own vehicle (ego-centric world view)."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "label": "ownVehicle",
+    "description": "The own vehicle is the car with the on-board driver assistance system. All other context objects are related to the own vehicle (ego-centric world view)."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficSign",
-    "Label": "trafficSign",
-    "Description": "A traffic sign provides information about the spatial/local context and the currently valid traffic rules, different from the default regulation."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficSign",
+    "label": "trafficSign",
+    "description": "A traffic sign provides information about the spatial/local context and the currently valid traffic rules, different from the default regulation."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
-    "Label": "participant",
-    "Description": "A participant is a dynamic, moving object within the traffic surrounding and is typically operated by other human (or robot) drivers."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "label": "participant",
+    "description": "A participant is a dynamic, moving object within the traffic surrounding and is typically operated by other human (or robot) drivers."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
-    "Label": "driver",
-    "Description": "The driver is steering the own-vehicle. The driver is typically human, but could be a robot (which would render the dataproperties 'age' and 'state' obsolete)."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "label": "driver",
+    "description": "The driver is steering the own-vehicle. The driver is typically human, but could be a robot (which would render the dataproperties 'age' and 'state' obsolete)."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#history",
-    "Label": "history",
-    "Description": "Longterm- and shortterm history can influence the currently planned driving maneuver (for future use)."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#history",
+    "label": "history",
+    "description": "Longterm- and shortterm history can influence the currently planned driving maneuver (for future use)."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#context",
-    "Label": "context",
-    "Description": "Currently valid context that the own-vehicle is driving in."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#context",
+    "label": "context",
+    "description": "Currently valid context that the own-vehicle is driving in."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
-    "Label": "drivingManeuver",
-    "Description": "A driving maneuver is planned and executed by the driver, e.g. take over, stop and park."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "label": "drivingManeuver",
+    "description": "A driving maneuver is planned and executed by the driver, e.g. take over, stop and park."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
-    "Label": "lane",
-    "Description": "A lane is a designated surface on a road (associated with certain rules) used by traffic participants."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "label": "lane",
+    "description": "A lane is a designated surface on a road (associated with certain rules) used by traffic participants."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#marking",
-    "Label": "marking",
-    "Description": "A marking separates a lane from other lanes or impassable environment."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#marking",
+    "label": "marking",
+    "description": "A marking separates a lane from other lanes or impassable environment."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObject",
-    "Label": "trafficObject",
-    "Description": "A traffic object is a static, non-moving object within the driving environment, providing additional information about the mandatory behavior to the participants."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObject",
+    "label": "trafficObject",
+    "description": "A traffic object is a static, non-moving object within the driving environment, providing additional information about the mandatory behavior to the participants."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficLight",
-    "Label": "trafficLight",
-    "Description": "A traffic light regulates precedence and start/stop of different directions (and lanes) and is usually valid for an intersection or a tunnel."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficLight",
+    "label": "trafficLight",
+    "description": "A traffic light regulates precedence and start/stop of different directions (and lanes) and is usually valid for an intersection or a tunnel."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#MetaInformation",
-    "Label": "MetaInformation",
-    "Description": "Meta-information provides quality information about an object. During the reasoning process, this information is used to deal with e.g. uncertainty and noisy data."
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#MetaInformation",
+    "label": "MetaInformation",
+    "description": "Meta-information provides quality information about an object. During the reasoning process, this information is used to deal with e.g. uncertainty and noisy data."
   },
   {
-    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#startTime",
-    "Label": "startTime",
-    "Description": "Start time as unix time value: number of seconds since 00:00:00 GMT, Jan 1 1970"
+    "vocabulary": 2304,
+    "uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#startTime",
+    "label": "startTime",
+    "description": "Start time as unix time value: number of seconds since 00:00:00 GMT, Jan 1 1970"
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Infant",
-    "Label": "Infant",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Infant",
+    "label": "Infant",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
-    "Label": "LivingBeing",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "label": "LivingBeing",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Teenager",
-    "Label": "Teenager",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Teenager",
+    "label": "Teenager",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Event",
-    "Label": "Event",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Event",
+    "label": "Event",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Child",
-    "Label": "Child",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Child",
+    "label": "Child",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
-    "Label": "RoadAccident",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "label": "RoadAccident",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#DriverLicense",
-    "Label": "DriverLicense",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#DriverLicense",
+    "label": "DriverLicense",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Location",
-    "Label": "Location",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Location",
+    "label": "Location",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Senior",
-    "Label": "Senior",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Senior",
+    "label": "Senior",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#InsuranceCert",
-    "Label": "InsuranceCert",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#InsuranceCert",
+    "label": "InsuranceCert",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Woman",
-    "Label": "Woman",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Woman",
+    "label": "Woman",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#OfficialAgency",
-    "Label": "OfficialAgency",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#OfficialAgency",
+    "label": "OfficialAgency",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Robot",
-    "Label": "Robot",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Robot",
+    "label": "Robot",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Organization",
-    "Label": "Organization",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Organization",
+    "label": "Organization",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Document",
-    "Label": "Document",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Document",
+    "label": "Document",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Person",
-    "Label": "Person",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Person",
+    "label": "Person",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#InsuranceCompany",
-    "Label": "InsuranceCompany",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#InsuranceCompany",
+    "label": "InsuranceCompany",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Man",
-    "Label": "Man",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Man",
+    "label": "Man",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Animal",
-    "Label": "Animal",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Animal",
+    "label": "Animal",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
-    "Label": "Vehicle",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "label": "Vehicle",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#NonLivingThings",
-    "Label": "NonLivingThings",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#NonLivingThings",
+    "label": "NonLivingThings",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#OfficialID",
-    "Label": "OfficialID",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#OfficialID",
+    "label": "OfficialID",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2012/7/ra3.owl#Adult",
-    "Label": "Adult",
-    "Description": ""
+    "vocabulary": 2305,
+    "uri": "http://www.w3.org/2012/7/ra3.owl#Adult",
+    "label": "Adult",
+    "description": ""
   },
   {
-    "Uri": "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
-    "Label": "point",
-    "Description": "Uniquely identified by lat/long/alt. i.e. spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT), lat(P2, LAT), long(P2, LONG), alt(P2, ALT). sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2). A point, typically described using a coordinate system relative to Earth, such as WGS84."
+    "vocabulary": 2306,
+    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+    "label": "point",
+    "description": "Uniquely identified by lat/long/alt. i.e. spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT), lat(P2, LAT), long(P2, LONG), alt(P2, ALT). sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2). A point, typically described using a coordinate system relative to Earth, such as WGS84."
   },
   {
-    "Uri": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
-    "Label": "SpatialThing",
-    "Description": "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes."
+    "vocabulary": 2306,
+    "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "label": "SpatialThing",
+    "description": "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes."
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveRoomTemperature",
-    "Label": "AboveRoomTemperature",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveRoomTemperature",
+    "label": "AboveRoomTemperature",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveZeroTemperature",
-    "Label": "AboveZeroTemperature",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveZeroTemperature",
+    "label": "AboveZeroTemperature",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution",
-    "Label": "AirPollution",
-    "Description": "The current air pollution represented as European Air Quality Index value. The index value is based on 3 pollutants of major concern in Europe: PM10, NO2, O3 and will be able to take into account to 3 additional pollutants (CO, PM2.5 and SO2) where data are also available."
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution",
+    "label": "AirPollution",
+    "description": "The current air pollution represented as European Air Quality Index value. The index value is based on 3 pollutants of major concern in Europe: PM10, NO2, O3 and will be able to take into account to 3 additional pollutants (CO, PM2.5 and SO2) where data are also available."
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AiringWeatherState",
-    "Label": "AiringWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AiringWeatherState",
+    "label": "AiringWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure",
-    "Label": "AtmosphericPressure",
-    "Description": "Atmospheric pressure in hectopascal (hPa)"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure",
+    "label": "AtmosphericPressure",
+    "description": "Atmospheric pressure in hectopascal (hPa)"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowOrZeroTemperature",
-    "Label": "BelowOrZeroTemperature",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowOrZeroTemperature",
+    "label": "BelowOrZeroTemperature",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover",
-    "Label": "CloudCover",
-    "Description": "Cloud cover in the unit 'Okta'"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover",
+    "label": "CloudCover",
+    "description": "Cloud cover in the unit 'Okta'"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CoolingWeatherState",
-    "Label": "CoolingWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CoolingWeatherState",
+    "label": "CoolingWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReport",
-    "Label": "CurrentWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReport",
+    "label": "CurrentWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReportFromSensor",
-    "Label": "CurrentWeatherReportFromSensor",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReportFromSensor",
+    "label": "CurrentWeatherReportFromSensor",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReportFromService",
-    "Label": "CurrentWeatherReportFromService",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CurrentWeatherReportFromService",
+    "label": "CurrentWeatherReportFromService",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature",
-    "Label": "DewPointTemperature",
-    "Description": "The dewpoint temperature in degrees Celsius. It is the temperature at which the air can no longer hold all of its water vapor, and some of the water vapor must condense into liquid water. The dew point is always lower than (or equal to) the air temperature. This concept was known as DewPoint in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature",
+    "label": "DewPointTemperature",
+    "description": "The dewpoint temperature in degrees Celsius. It is the temperature at which the air can no longer hold all of its water vapor, and some of the water vapor must condense into liquid water. The dew point is always lower than (or equal to) the air temperature. This concept was known as DewPoint in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity",
-    "Label": "DryHumidity",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity",
+    "label": "DryHumidity",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeFrost",
-    "Label": "ExtremeFrost",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeFrost",
+    "label": "ExtremeFrost",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeHeat",
-    "Label": "ExtremeHeat",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeHeat",
+    "label": "ExtremeHeat",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FairWeatherState",
-    "Label": "FairWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FairWeatherState",
+    "label": "FairWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast10HoursWeatherReport",
-    "Label": "Forecast10HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast10HoursWeatherReport",
+    "label": "Forecast10HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast11HoursWeatherReport",
-    "Label": "Forecast11HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast11HoursWeatherReport",
+    "label": "Forecast11HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast12HoursWeatherReport",
-    "Label": "Forecast12HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast12HoursWeatherReport",
+    "label": "Forecast12HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast13HoursWeatherReport",
-    "Label": "Forecast13HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast13HoursWeatherReport",
+    "label": "Forecast13HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast14HoursWeatherReport",
-    "Label": "Forecast14HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast14HoursWeatherReport",
+    "label": "Forecast14HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast15HoursWeatherReport",
-    "Label": "Forecast15HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast15HoursWeatherReport",
+    "label": "Forecast15HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast16HoursWeatherReport",
-    "Label": "Forecast16HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast16HoursWeatherReport",
+    "label": "Forecast16HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast17HoursWeatherReport",
-    "Label": "Forecast17HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast17HoursWeatherReport",
+    "label": "Forecast17HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast18HoursWeatherReport",
-    "Label": "Forecast18HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast18HoursWeatherReport",
+    "label": "Forecast18HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast19HoursWeatherReport",
-    "Label": "Forecast19HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast19HoursWeatherReport",
+    "label": "Forecast19HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast1HourWeatherReport",
-    "Label": "Forecast1HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast1HourWeatherReport",
+    "label": "Forecast1HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast20HoursWeatherReport",
-    "Label": "Forecast20HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast20HoursWeatherReport",
+    "label": "Forecast20HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast21HoursWeatherReport",
-    "Label": "Forecast21HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast21HoursWeatherReport",
+    "label": "Forecast21HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast22HoursWeatherReport",
-    "Label": "Forecast22HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast22HoursWeatherReport",
+    "label": "Forecast22HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast23HoursWeatherReport",
-    "Label": "Forecast23HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast23HoursWeatherReport",
+    "label": "Forecast23HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast24HoursWeatherReport",
-    "Label": "Forecast24HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast24HoursWeatherReport",
+    "label": "Forecast24HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast2HoursWeatherReport",
-    "Label": "Forecast2HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast2HoursWeatherReport",
+    "label": "Forecast2HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast3HoursWeatherReport",
-    "Label": "Forecast3HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast3HoursWeatherReport",
+    "label": "Forecast3HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast4HoursWeatherReport",
-    "Label": "Forecast4HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast4HoursWeatherReport",
+    "label": "Forecast4HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast5HoursWeatherReport",
-    "Label": "Forecast5HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast5HoursWeatherReport",
+    "label": "Forecast5HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast6HoursWeatherReport",
-    "Label": "Forecast6HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast6HoursWeatherReport",
+    "label": "Forecast6HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast7HoursWeatherReport",
-    "Label": "Forecast7HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast7HoursWeatherReport",
+    "label": "Forecast7HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast8HoursWeatherReport",
-    "Label": "Forecast8HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast8HoursWeatherReport",
+    "label": "Forecast8HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast9HoursWeatherReport",
-    "Label": "Forecast9HoursWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Forecast9HoursWeatherReport",
+    "label": "Forecast9HoursWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ForecastWeatherReport",
-    "Label": "ForecastWeatherReport",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ForecastWeatherReport",
+    "label": "ForecastWeatherReport",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze",
-    "Label": "FreshBreeze",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze",
+    "label": "FreshBreeze",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale",
-    "Label": "FreshGale",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale",
+    "label": "FreshGale",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Frost",
-    "Label": "Frost",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Frost",
+    "label": "Frost",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze",
-    "Label": "GentleBreeze",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze",
+    "label": "GentleBreeze",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Heat",
-    "Label": "Heat",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Heat",
+    "label": "Heat",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeatingWeatherState",
-    "Label": "HeatingWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeatingWeatherState",
+    "label": "HeatingWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation",
-    "Label": "HeavyPrecipitation",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation",
+    "label": "HeavyPrecipitation",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighAirPollution",
-    "Label": "HighAirPollution",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighAirPollution",
+    "label": "HighAirPollution",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighSolarIrradiance",
-    "Label": "HighSolarIrradiance",
-    "Description": "This concept was known as 'HighSolarRadiation' in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighSolarIrradiance",
+    "label": "HighSolarIrradiance",
+    "description": "This concept was known as 'HighSolarRadiation' in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HumidifyingWeatherState",
-    "Label": "HumidifyingWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HumidifyingWeatherState",
+    "label": "HumidifyingWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity",
-    "Label": "Humidity",
-    "Description": "Represents the relative humidity of the air in percent"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity",
+    "label": "Humidity",
+    "description": "Represents the relative humidity of the air in percent"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane",
-    "Label": "Hurricane",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane",
+    "label": "Hurricane",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir",
-    "Label": "LightAir",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir",
+    "label": "LightAir",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze",
-    "Label": "LightBreeze",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze",
+    "label": "LightBreeze",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation",
-    "Label": "LightPrecipitation",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation",
+    "label": "LightPrecipitation",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind",
-    "Label": "LightWind",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind",
+    "label": "LightWind",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LongRangeForecast",
-    "Label": "LongRangeForecast",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LongRangeForecast",
+    "label": "LongRangeForecast",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowAirPollution",
-    "Label": "LowAirPollution",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowAirPollution",
+    "label": "LowAirPollution",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowSolarIrradiance",
-    "Label": "LowSolarIrradiance",
-    "Description": "This concept was known as 'LowSolarRadiation' in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowSolarIrradiance",
+    "label": "LowSolarIrradiance",
+    "description": "This concept was known as 'LowSolarRadiation' in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MediumAirPollution",
-    "Label": "MediumAirPollution",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MediumAirPollution",
+    "label": "MediumAirPollution",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MidRangeForecast",
-    "Label": "MidRangeForecast",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MidRangeForecast",
+    "label": "MidRangeForecast",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze",
-    "Label": "ModerateBreeze",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze",
+    "label": "ModerateBreeze",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale",
-    "Label": "ModerateGale",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale",
+    "label": "ModerateGale",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation",
-    "Label": "ModeratePrecipitation",
-    "Description": "This concept was known as 'MediumPrecipitation' in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation",
+    "label": "ModeratePrecipitation",
+    "description": "This concept was known as 'MediumPrecipitation' in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateSolarIrradiance",
-    "Label": "ModerateSolarIrradiance",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateSolarIrradiance",
+    "label": "ModerateSolarIrradiance",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity",
-    "Label": "MoistHumidity",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity",
+    "label": "MoistHumidity",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MostlyCloudy",
-    "Label": "MostlyCloudy",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MostlyCloudy",
+    "label": "MostlyCloudy",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeglectibleSolarIrradiance",
-    "Label": "NeglectibleSolarIrradiance",
-    "Description": "This concept was known as 'NeglectibleSolarRadiation' in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeglectibleSolarIrradiance",
+    "label": "NeglectibleSolarIrradiance",
+    "description": "This concept was known as 'NeglectibleSolarRadiation' in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeutralWeatherState",
-    "Label": "NeutralWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeutralWeatherState",
+    "label": "NeutralWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoCloudCover",
-    "Label": "NoCloudCover",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoCloudCover",
+    "label": "NoCloudCover",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation",
-    "Label": "NoPrecipitation",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation",
+    "label": "NoPrecipitation",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind",
-    "Label": "NoWind",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind",
+    "label": "NoWind",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity",
-    "Label": "OptimumHumidity",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity",
+    "label": "OptimumHumidity",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Overcast",
-    "Label": "Overcast",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Overcast",
+    "label": "Overcast",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#PartlyCloudy",
-    "Label": "PartlyCloudy",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#PartlyCloudy",
+    "label": "PartlyCloudy",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation",
-    "Label": "Precipitation",
-    "Description": "Represents precipitation in millimetres"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation",
+    "label": "Precipitation",
+    "description": "Represents precipitation in millimetres"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RainyWeatherState",
-    "Label": "RainyWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RainyWeatherState",
+    "label": "RainyWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RoomTemperature",
-    "Label": "RoomTemperature",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RoomTemperature",
+    "label": "RoomTemperature",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource",
-    "Label": "SensorReportSource",
-    "Description": "This class was known as 'SensorSource' in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource",
+    "label": "SensorReportSource",
+    "description": "This class was known as 'SensorSource' in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ServiceReportSource",
-    "Label": "ServiceReportSource",
-    "Description": "This class was known as 'ServiceSource' in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ServiceReportSource",
+    "label": "ServiceReportSource",
+    "description": "This class was known as 'ServiceSource' in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SevereWeatherState",
-    "Label": "SevereWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SevereWeatherState",
+    "label": "SevereWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ShortRangeForecast",
-    "Label": "ShortRangeForecast",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ShortRangeForecast",
+    "label": "ShortRangeForecast",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SnowyWeatherState",
-    "Label": "SnowyWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SnowyWeatherState",
+    "label": "SnowyWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance",
-    "Label": "SolarIrradiance",
-    "Description": "Measurement of solar irrradiation at a specific location in Watts per square meter (W/m²).This concept was known as 'SolarRadiation' in prior versions of the ontology"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance",
+    "label": "SolarIrradiance",
+    "description": "Measurement of solar irrradiation at a specific location in Watts per square meter (W/m²).This concept was known as 'SolarRadiation' in prior versions of the ontology"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm",
-    "Label": "Storm",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm",
+    "label": "Storm",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze",
-    "Label": "StrongBreeze",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze",
+    "label": "StrongBreeze",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale",
-    "Label": "StrongGale",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale",
+    "label": "StrongGale",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind",
-    "Label": "StrongWind",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind",
+    "label": "StrongWind",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SunnyWeatherState",
-    "Label": "SunnyWeatherState",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SunnyWeatherState",
+    "label": "SunnyWeatherState",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature",
-    "Label": "Temperature",
-    "Description": "Exterior temperature in degrees Celsius"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature",
+    "label": "Temperature",
+    "description": "Exterior temperature in degrees Celsius"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Thunderstorm",
-    "Label": "Thunderstorm",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Thunderstorm",
+    "label": "Thunderstorm",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#UnknownCloudCover",
-    "Label": "UnknownCloudCover",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#UnknownCloudCover",
+    "label": "UnknownCloudCover",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryHighAirPollution",
-    "Label": "VeryHighAirPollution",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryHighAirPollution",
+    "label": "VeryHighAirPollution",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryLowAirPollution",
-    "Label": "VeryLowAirPollution",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryLowAirPollution",
+    "label": "VeryLowAirPollution",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm",
-    "Label": "ViolentStorm",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm",
+    "label": "ViolentStorm",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition",
-    "Label": "WeatherCondition",
-    "Description": "One-word description of the observed weather condition"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition",
+    "label": "WeatherCondition",
+    "description": "One-word description of the observed weather condition"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon",
-    "Label": "WeatherPhenomenon",
-    "Description": "Different weather phenomena that may influence the current and forecasted weather state."
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon",
+    "label": "WeatherPhenomenon",
+    "description": "Different weather phenomena that may influence the current and forecasted weather state."
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport",
-    "Label": "WeatherReport",
-    "Description": "A weather report that can be retrieved through a local sensor (e.g. weather station integrated in the smart home) or a remote internet service. Further a time division has been realized to differentiate between current, short, mid and long term forecasts. For the smart home domain, a time window of 24 hours for weather forecasts has been seen as suitable with a 24 hours forecast being classified as long-term forecast"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport",
+    "label": "WeatherReport",
+    "description": "A weather report that can be retrieved through a local sensor (e.g. weather station integrated in the smart home) or a remote internet service. Further a time division has been realized to differentiate between current, short, mid and long term forecasts. For the smart home domain, a time window of 24 hours for weather forecasts has been seen as suitable with a 24 hours forecast being classified as long-term forecast"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportFromSensor",
-    "Label": "WeatherReportFromSensor",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportFromSensor",
+    "label": "WeatherReportFromSensor",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportFromService",
-    "Label": "WeatherReportFromService",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportFromService",
+    "label": "WeatherReportFromService",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource",
-    "Label": "WeatherReportSource",
-    "Description": "Holds information about the origins of weather reports"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource",
+    "label": "WeatherReportSource",
+    "description": "Holds information about the origins of weather reports"
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
-    "Label": "WeatherState",
-    "Description": "Describes the actual weather reported through information from the weather source."
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "label": "WeatherState",
+    "description": "Describes the actual weather reported through information from the weather source."
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale",
-    "Label": "WholeGale",
-    "Description": ""
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale",
+    "label": "WholeGale",
+    "description": ""
   },
   {
-    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind",
-    "Label": "Wind",
-    "Description": "Unit of wind direction is degrees. Unit of wind speed in metres per second (m/s). Wind direction and speed are represented as datatype properties 'hasDirection' and 'hasSpeed'"
+    "vocabulary": 2306,
+    "uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind",
+    "label": "Wind",
+    "description": "Unit of wind direction is degrees. Unit of wind speed in metres per second (m/s). Wind direction and speed are represented as datatype properties 'hasDirection' and 'hasSpeed'"
   }
 ]
