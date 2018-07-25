@@ -1,0 +1,1841 @@
+[
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#accessControl",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2006/gen/ont#InformationResource",
+    "Range": "http://www.w3.org/2006/gen/ont#InformationResource",
+    "Label": "access control",
+    "Description": "The Access Control file for this information resource. This may of course be a virtual resource implemented by the access control system. Note also HTTP's header Link: foo.meta ;rel=meta can be used for this."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#accessTo",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "http://www.w3.org/2006/gen/ont#InformationResource",
+    "Label": "to",
+    "Description": "The information resource to which access is being granted."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#accessToClass",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Class",
+    "Label": "to all in",
+    "Description": "A class of information resources to which access is being granted."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#agent",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "http://xmlns.com/foaf/0.1/Agent",
+    "Label": "agent",
+    "Description": "A person or social entity to being given the right"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#agentClass",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Class",
+    "Label": "agent class",
+    "Description": "A class of persons or social entities to being given the right"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#agentGroup",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "http://www.w3.org/2006/vcard/ns#Group",
+    "Label": "agent group",
+    "Description": "A group of persons or social entities to being given the right"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#default",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "",
+    "Label": "default access for things in this",
+    "Description": "A directory for which this authorization is used for new files in the directory."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#defaultForNew",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "",
+    "Label": "default access for new things in the object",
+    "Description": "THIS IS OBSOLETE AS OF 2017-08-01. See 'default'. Was: A directory for which this authorization is used for new files in the directory."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#delegates",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://xmlns.com/foaf/0.1/Agent",
+    "Label": "delegates",
+    "Description": "Delegates a person or another agent to act on behalf of the agent. For example, Alice delegates Bob to act on behalf of Alice for ACL purposes."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#mode",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Class",
+    "Label": "access mode",
+    "Description": "A mode of access such as read or write."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#origin",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/auth/acl#Authorization",
+    "Range": "http://www.w3.org/ns/auth/acl#Origin",
+    "Label": "origin",
+    "Description": "A web application, identified by its Origin, such as &lt;https://scripts.example.com&gt;, being given the right."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/auth/acl#owner",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://xmlns.com/foaf/0.1/Agent",
+    "Label": "owner",
+    "Description": "The person or other agent which owns this. For example, the owner of a file in a filesystem. There is a sense of right to control. Typically defaults to the agent who craeted something but can be changed."
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/attributedTo",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/Storyline",
+    "Range": "http://purl.org/ontology/storyline/Attribution",
+    "Label": "attributedTo",
+    "Description": "Associates a storyline to its attribution. Provides for interpretation provenance through attribution"
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/contains",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Range": "http://purl.org/ontology/storyline/StorylineComponent",
+    "Label": "contains",
+    "Description": "Associates a Slot to a StorylineComponent contained therein. Can be a news event or another storyline"
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/dateCreated",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/StorylineComponent",
+    "Range": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "Label": "dateCreated",
+    "Description": "The date a storyline was created"
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/follows",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Range": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Label": "follows",
+    "Description": "Allows one or more slots to be sequenced. Slot A follows Slot B."
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/hasChapter",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/Storyline",
+    "Range": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Label": "hasChapter",
+    "Description": "Associates a slot to a storyline as a chapter of an existing storyline."
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/hasDevelopment",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/Storyline",
+    "Range": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Label": "hasDevelopment",
+    "Description": "Associates a slot to a storyline as a development of an existing storyline."
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/hasSlot",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/Storyline",
+    "Range": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Label": "hasSlot",
+    "Description": "Associates a slot to a storyline. A storyline can have many slots"
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/hasUpdate",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/Storyline",
+    "Range": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Label": "hasUpdate",
+    "Description": "Associates a slot to a storyline as an update to an existing storyline."
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/index",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Range": "http://www.w3.org/2001/XMLSchema#integer",
+    "Label": "index",
+    "Description": "A slot index. Allows slots to be ordered numerically"
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/synopsis",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/Storyline",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "Label": "synopsis",
+    "Description": "The synopsis of a storyline"
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/time",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/StorylineSlot",
+    "Range": "http://www.w3.org/2006/time#TemporalEntity",
+    "Label": "time",
+    "Description": "The time of a slot. A Temporal entity, an interval. Allows slots to be ordered temporally."
+  },
+  {
+    "Uri": "http://purl.org/ontology/storyline/topic",
+    "Parent uri": "",
+    "Domain": "http://purl.org/ontology/storyline/Storyline",
+    "Range": "http://purl.org/ontology/storyline/Topic",
+    "Label": "topic",
+    "Description": "Associates a slot to a topic"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#themeTaxonomy",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Catalog",
+    "Range": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "Label": "theme taxonomy",
+    "Description": "The knowledge organization system (KOS) used to classify catalog's datasets."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#dataset",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Catalog",
+    "Range": "http://www.w3.org/ns/dcat#Dataset",
+    "Label": "dataset",
+    "Description": "Links a catalog to a dataset that is part of the catalog."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#record",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Catalog",
+    "Range": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "Label": "record",
+    "Description": "Links a catalog to its records."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#theme",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Label": "theme",
+    "Description": "The main category of the dataset. A dataset can have multiple themes. The set of skos:Concepts used to categorize the datasets are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#keyword",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "Label": "keyword",
+    "Description": "A keyword or tag describing the dataset."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#contactPoint",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "http://www.w3.org/2006/vcard/ns#Kind",
+    "Label": "contact point",
+    "Description": "Links a dataset to relevant contact information which is provided using VCard."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#distribution",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "http://www.w3.org/ns/dcat#Distribution",
+    "Label": "distribution",
+    "Description": "Connects a dataset to one of its available distributions."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#landingPage",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "http://xmlns.com/foaf/0.1/Document",
+    "Label": "landing page",
+    "Description": "A Web page that can be navigated to in a Web browser to gain access to the dataset, its distributions and/or additional information."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#accessURL",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Distribution",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "Label": "access URL",
+    "Description": "Could be any kind of URL that gives access to a distribution of the dataset. E.g. landing page, download, feed URL, SPARQL endpoint. Use when your catalog does not have information on which it is or when it is definitely not a download. The value is a URL. If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link should be duplicated as accessURL on a distribution."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#downloadURL",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Distribution",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "Label": "download URL",
+    "Description": "This is a direct link to a downloadable file in a given format. E.g. CSV file or RDF file. The format is described by the distribution's dc:format and/or dcat:mediaType. The value is a URL."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#byteSize",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Distribution",
+    "Range": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "Label": "byte size",
+    "Description": "The size of a distribution in bytes. The size in bytes can be approximated when the precise size is not known. The literal value of dcat:byteSize should by typed as xsd:decimal"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#mediaType",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Distribution",
+    "Range": "http://purl.org/dc/terms/MediaTypeOrExtent",
+    "Label": "media type",
+    "Description": "This property SHOULD be used when the media type of the distribution is defined in IANA, otherwise dct:format MAY be used with different values."
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#dataQuality",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "",
+    "Label": "data quality (Deprecated)",
+    "Description": "describes the quality of data e.g. precision. This should not be used to describe the data collection characteristics, other more specialized statistical properties can be used instead. This term has been deprecated"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#dataDictionary",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "",
+    "Label": "data dictionary (Deprecated)",
+    "Description": "links a dataset to a dictionary that helps interpreting the data. This term has been deprecated"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#granularity",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Dataset",
+    "Range": "",
+    "Label": "granularity (Deprecated)",
+    "Description": "describes the level of granularity of data in a dataset. The granularity can be in time, place etc. This term has been deprecated"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#size",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Distribution",
+    "Range": "",
+    "Label": "size (Deprecated)",
+    "Description": "the size of a distribution. This term has been deprecated"
+  },
+  {
+    "Uri": "http://www.w3.org/ns/dcat#bytes",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/ns/dcat#Distribution",
+    "Range": "http://www.w3.org/2001/XMLSchema#integer",
+    "Label": "size in bytes (Deprecated)",
+    "Description": "describe size of resource in bytes. This term has been deprecated"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuverType",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "Range": "{driveStraightFullSight ,driveStraightHalfSight, driveBehind ,changeLaneLeft ,turnLeft ,turnRight ,takeOver ,stop,start, turnAround, slowDown ,speedUp ,increaseAttention, stayLeft,stayRight, brakeReady, gearDown ,gearUp,park, crossOncomingLane, checkLeft,changeLaneRight}",
+    "Label": "drivingManeuverType",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#rightLaneId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsAdjacentTo",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "rightLaneId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#leftLaneId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsAdjacentTo",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "leftLaneId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#age",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "age",
+    "Description": "Age of the driver; interval range between [16;100]"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#startLaneId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsConnectedTo",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "startLaneId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#longitude",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "longitude",
+    "Description": [
+      -180,
+      180
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficLightDistance",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "trafficLightDistance",
+    "Description": "Distance between the own vehicle and the traffic light."
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isPartOf",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeature",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Label": "isPartOf",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#restrict",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#roadConditions  http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObject",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "Label": "restrict",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#riskWillingness",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "Range": "{low, medium,high}",
+    "Label": "riskWillingness",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#unordinaryBehavior",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Range": "http://www.w3.org/2001/XMLSchema#boolean",
+    "Label": "unordinaryBehavior",
+    "Description": "A participant is behaving out of norm."
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isObstacle",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#boolean",
+    "Label": "isObstacle",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#degreeOfExperience",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "Range": "{beginner, advanced,expert }",
+    "Label": "degreeOfExperience",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#localContextType",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#localContext",
+    "Range": "{intersection, levelCrossing,tunnel,roundabout,bridge,crosswalk}",
+    "Label": "localContextType",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#source",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#MetaInformation",
+    "Range": "{ staticallyProvided,onBoardSensing, gis,foreignSensingSystem,logicallyDerived}",
+    "Label": "source",
+    "Description": "Source that is providing information about the object"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#attributeIsDerivable",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isDerivable",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "attributeIsDerivable",
+    "Description": "Name of attribute: given as class.attribute name"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#derivationParameters",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isDerivable",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "derivationParameters",
+    "Description": "Attributes needed for derivation in list form: class1.attr1, class2.attr2, ..."
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#derivationRule",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isDerivable",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "derivationRule",
+    "Description": "Rule that must be used for attribute derivation"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#visibility",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#roadConditions",
+    "Range": "{veryGood, good,sufficient,bad}",
+    "Label": "visibility",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#steeringWheelAngle",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "steeringWheelAngle",
+    "Description": [
+      0,
+      360
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#connectedThroughManeuver",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsConnectedTo",
+    "Range": "{straight, left, right}",
+    "Label": "connectedThroughManeuver",
+    "Description": "Driving maneuver through which two lanes are reachable, e.g straight, left, right"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#speed",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "speed",
+    "Description": "Fastest car on earth goes about 400km/h, so this is the absolute maximum value. [0,400]"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drive",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Label": "drive",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#risk",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "Range": "{low, medium, high}",
+    "Label": "risk",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownMaximumSpeed",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "ownMaximumSpeed",
+    "Description": [
+      0,
+      400
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneWidth",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "laneWidth",
+    "Description": "Lane width in meters; positive floating point value"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivesIn",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#context",
+    "Label": "drivesIn",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#endLaneId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneIsConnectedTo",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "endLaneId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneType",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Range": "{frontageRoad, track, accelerationLane, decelerationLane, breakDownLane, busStop}",
+    "Label": "laneType",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#laneDirection",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Range": "{straight,slightRight,sharpRight,right,slightLeft, sharpLeft,uTurnRight, uTurnLeft, left}",
+    "Label": "laneDirection",
+    "Description": "Values according to TeleAtlas-Data-Format-Specification"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#direction",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
+    "Range": "{front,frontLeft,frontRight,left,right,rear,rearLeft, rearRight}",
+    "Label": "direction",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#throttleIntensity",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "{light, medium, heavy}",
+    "Label": "throttleIntensity",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#has",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#context",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "has",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#gear",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "gear",
+    "Description": "Current gear of the vehicle;"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#validity",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#MetaInformation",
+    "Range": "{permanent,infrequent, frequent}",
+    "Label": "validity",
+    "Description": "Frequency of change for statically provided objects"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#quality",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#MetaInformation",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "quality",
+    "Description": "Quality value for the object, provided by source"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#stopTime",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "stopTime",
+    "Description": "Start time as unix time value: number of seconds since 00:00:00 GMT, Jan 1 1970 OR inf for valid until further notice"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#plan",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "Label": "plan",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#dependsOn",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#localContext",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spatialContext",
+    "Label": "dependsOn",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#directionMovement",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
+    "Range": "{towards,away, parallel}",
+    "Label": "directionMovement",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#safetyDistance",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "safetyDistance",
+    "Description": "Necessary safety distance for a driving maneuver. Positive float value."
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#relationPartId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Label": "relationPartId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#surfaceTemperature",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#roadConditions",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "surfaceTemperature",
+    "Description": "Temperatur of the road surface; floating point value in the range of [-50;80]"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#width",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "width",
+    "Description": "Minimun value is 0"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#surfaceCondition",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#roadConditions",
+    "Range": "{wet,slippery,dry}",
+    "Label": "surfaceCondition",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#markingType",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#marking",
+    "Range": "{edgeline,centerline, doubleWhiteLine, stopline, laneIndicator}",
+    "Label": "markingType",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spatialContextType",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spatialContext",
+    "Range": "{highway,semiMotorway, ruralRoad, city}",
+    "Label": "spatialContextType",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficLightState",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficLight",
+    "Range": "{stop, conditionalStop, getReady, freeWay, outOfOrder}",
+    "Label": "trafficLightState",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#hasAdditionalInformation",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ContextObject http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ObjectRelationship",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#MetaInformation",
+    "Label": "hasAdditionalInformation",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isAllowedIn",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#context",
+    "Label": "isAllowedIn",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#generalSpeedLimit",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spatialContext",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "generalSpeedLimit",
+    "Description": "Minimum value is 0"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#numberOfLanes",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#context",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "numberOfLanes",
+    "Description": "Value is derived from 'has'-object property. Minimum value iss 0"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantSpeed",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "participantSpeed",
+    "Description": [
+      0,
+      400
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#dop",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "dop",
+    "Description": [
+      1,
+      50
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#isValidFor",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObject",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "isValidFor",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#usedLaneId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantUseLane",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "usedLaneId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#partLength",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "partLength",
+    "Description": [
+      0,
+      20
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#distance",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "distance",
+    "Description": "Distance in meters. Minimum value is 0"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#airTemperature",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#roadConditions",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "airTemperature",
+    "Description": [
+      -50,
+      80
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#relationOwnVehicleId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantHasRelationToVehicle",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Label": "relationOwnVehicleId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#heading",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "heading",
+    "Description": [
+      0,
+      360
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#execute",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "Label": "execute",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantType",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Range": "{pedestrian,bike, skater, vehicle, truck,motorbike,moped,tractor,bus,tram, emergencyVehicle}",
+    "Label": "participantType",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObjId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObjectIsValidForLane",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObject",
+    "Label": "trafficObjId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#validLaneId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficObjectIsValidForLane",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Label": "validLaneId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeatureState",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeature",
+    "Range": "{active,ready, failure}",
+    "Label": "technicalFeatureState",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeatureType",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeature",
+    "Range": "{light,headlight,turnIndicatorLeft,turnIndicatorRight,fogLight,fogTailLight,abs,esp,acc,wipersFront,wipersBack,blueLight}",
+    "Label": "technicalFeatureType",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#usingPartId",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantUseLane",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Label": "usingPartId",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#addOnSign",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficSign",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "addOnSign",
+    "Description": "Add-on-sign of a traffic sign e.g. direction of road that has right of way."
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spaceRight",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantUseLane",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "spaceRight",
+    "Description": "Space on the right in meters. Minimum value is 0"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#spaceLeft",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participantUseLane",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "spaceLeft",
+    "Description": "Minimum value is 0"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#state",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#driver",
+    "Range": "{tired,drunk,stressed,distracted,ill,medicated}",
+    "Label": "state",
+    "Description": "Possible driver states"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#influence",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#context http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#history http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#technicalFeature",
+    "Range": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#drivingManeuver",
+    "Label": "influence",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#brakeIntensity",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "{light, medium, heavy}",
+    "Label": "brakeIntensity",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#maximumSpeed",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "maximumSpeed",
+    "Description": [
+      0,
+      400
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#length",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "length",
+    "Description": [
+      0,
+      20
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficFlowDirection",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lane",
+    "Range": "{openBoth, openPositive,openNegative, closedBoth}",
+    "Label": "trafficFlowDirection",
+    "Description": "Allowed direction of traffic flow for a lane; values according to TeleAtlas-Format-Specification"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#lineOfSight",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "lineOfSight",
+    "Description": "Distance in meters, positive float value. Minimum value is 0"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#additionalInfo",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficSign",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "additionalInfo",
+    "Description": "Additional information of a traffig sign."
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#timespan",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#MetaInformation",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "timespan",
+    "Description": "Timespan of validity for a given object (for temporal reasoning)"
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#latitude",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "latitude",
+    "Description": [
+      -90,
+      90
+    ]
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#gpsPosition",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#ownVehicle",
+    "Range": "",
+    "Label": "gpsPosition",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#partWidth",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#participant",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "partWidth",
+    "Description": ""
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficLightDirection",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficLight",
+    "Range": "{straight, left,right}",
+    "Label": "trafficLightDirection",
+    "Description": "Driving direction for which a traffic light is valid."
+  },
+  {
+    "Uri": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#signName",
+    "Parent uri": "",
+    "Domain": "http://vi.uni-klu.ac.at/ontology/DrivingContext.owl#trafficSign",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "signName",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#drives",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Label": "drives",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isPassengerOf",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Label": "isPassengerOf",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#involves",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "involves",
+    "Description": "Involves Person, Vehicle, Animal, NonLivingThing like a stone on the road, another RoadAccident, etc"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#carries",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "carries",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#insures",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#InsuranceCompany",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "insures",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isIn",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "isIn",
+    "Description": "Anything can be in anything"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#location",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Event",
+    "Range": "http://www.w3.org/2012/7/ra3.owl#Location",
+    "Label": "location",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isOn",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "isOn",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#drivenBy",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Range": "",
+    "Label": "drivenBy",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isOwnedBy",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2012/7/ra3.owl#Person",
+    "Label": "isOwnedBy",
+    "Description": "A person cannot be owned"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#deliveredBy",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#OfficialID",
+    "Range": "http://www.w3.org/2012/7/ra3.owl#Organization",
+    "Label": "deliveredBy",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#insuredBy",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2012/7/ra3.owl#InsuranceCompany",
+    "Label": "insuredBy",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isPartOf",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "isPartOf",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#includes",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "includes",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#delivers",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "delivers",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#owns",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Person",
+    "Range": "http://www.w3.org/2002/07/owl#Thing",
+    "Label": "owns",
+    "Description": "Only Person and org owns things, several possible"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#involvedIn",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "Label": "involvedIn",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#insuranceType",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "insuranceType",
+    "Description": "Name of coverage package in the given insurance"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#ageInyears",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "Label": "ageInyears",
+    "Description": "Age at event time"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#lastName",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "lastName",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#vehicleCategory",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Range": "{bicycle , bus , car , motocycle , truck}",
+    "Label": "vehicleCategory",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#driverLicenseCategory",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#DriverLicense",
+    "Range": "{lightvehicle , motorcycle , truck}",
+    "Label": "driverLicenseCategory",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#positionInVehicle",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "{backseat , front passenger , truck platform}",
+    "Label": "positionInVehicle",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#accidentDetails",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "Range": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "Label": "accidentDetails",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#vehicleColor",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Range": "{darkgrey , green , lightgrey}",
+    "Label": "vehicleColor",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#orgAddress",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Organization",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "orgAddress",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#vehicleProblem",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Range": "{brake , deadengine , flattire}",
+    "Label": "vehicleProblem",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#relatedDamage",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#NonLivingThing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "relatedDamage",
+    "Description": "Apply to non living thing, cars, robot, same as injury for person/animal"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#parked",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#boolean",
+    "Label": "parked",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#birthDate",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "",
+    "Label": "birthDate",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#animalRace",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "{boar , cat , deer , dog , donkey , horse}",
+    "Label": "animalRace",
+    "Description": "Person are not Animal in my universe"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#relatedInjuryDesc",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "relatedInjuryDesc",
+    "Description": "sms size description of injury"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#insuranceID",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "insuranceID",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#Name",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "Name",
+    "Description": "Same as lastName if not present"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isWitness",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Person",
+    "Range": "http://www.w3.org/2001/XMLSchema#boolean",
+    "Label": "isWitness",
+    "Description": "Robot and animal cannot be witness or declares something in my universe"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#speedUnit",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "{kmh , mph}",
+    "Label": "speedUnit",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#vehicleBrand",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "vehicleBrand",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#email",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "email",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#orgShortName",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Organization",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "orgShortName",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#trafficViolation",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "{crossingfordidden , priority , redlight , speed , stop}",
+    "Label": "trafficViolation",
+    "Description": "Robot, animal, pedestrian included"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#driverLicenceNumber",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#DriverLicence",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "driverLicenceNumber",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#gps",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Location",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "gps",
+    "Description": "e.g. lat:45.0 long:-6.5"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#weatherCondition",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "Range": "{earthquake , flood , ice , mud , normal , rain , smoke , snow , wind}",
+    "Label": "weatherCondition",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isRemote",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2001/XMLSchema#boolean",
+    "Label": "isRemote",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#passengerProtection",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "{airbag , arceau , helmet , seatbelt}",
+    "Label": "passengerProtection",
+    "Description": "Use None to say that the passenger didn't have one"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#deliveredDate",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#OfficialID",
+    "Range": "http://www.w3.org/2001/XMLSchema#date",
+    "Label": "deliveredDate",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#vehicleID",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Vehicle",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "vehicleID",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#makeDate",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#NonLivingThing",
+    "Range": "http://www.w3.org/2001/XMLSchema#date",
+    "Label": "makeDate",
+    "Description": "Creation or delivered date"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#speed",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2002/07/owl#Thing",
+    "Range": "http://www.w3.org/2001/XMLSchema#integer",
+    "Label": "speed",
+    "Description": "Speed in speedunit, default kmh"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isSerious",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "Range": "http://www.w3.org/2001/XMLSchema#boolean",
+    "Label": "isSerious",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#relatedInjury",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "{fatal , light , none , severe}",
+    "Label": "relatedInjury",
+    "Description": "Use some kind of existing classification"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#declares",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Person",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "declares",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#driverProblem",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "{asleep , heartattack , lostcontrol , mistake , notlooking , onthephone}",
+    "Label": "driverProblem",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#orgFullName",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Organization",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "orgFullName",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isOnRoadType",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "Range": "{freeway , motorway , street}",
+    "Label": "isOnRoadType",
+    "Description": "roadType of Road the accident happens on"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#SSN",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "SSN",
+    "Description": "Every living being can have a social security number, a person HAS one"
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#address",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Location",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "address",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#firstName",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "http://www.w3.org/2001/XMLSchema#string",
+    "Label": "firstName",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#lightCondition",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#RoadAccident",
+    "Range": "{darkness , daylight , inbetween , unknown}",
+    "Label": "lightCondition",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#date",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#Event",
+    "Range": "http://www.w3.org/2001/XMLSchema#date",
+    "Label": "date",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#validityDate",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#OfficialID",
+    "Range": "http://www.w3.org/2001/XMLSchema#date",
+    "Label": "validityDate",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2012/7/ra3.owl#isInService",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2012/7/ra3.owl#LivingBeing",
+    "Range": "http://www.w3.org/2001/XMLSchema#boolean",
+    "Label": "isInService",
+    "Description": "Someone working at the time of the even. dog can work by themselves"
+  },
+  {
+    "Uri": "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "Label": "location",
+    "Description": "The relation between something and the point, or other geometrical thing in space, where it is. For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping ."
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#belongsToWeatherState",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "",
+    "Label": "belongsToWeatherState",
+    "Description": "This property was known as belongsToState in prior versions of the ontology"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport",
+    "Range": "http://www.w3.org/2006/time#TemporalEntity",
+    "Label": "createdAt",
+    "Description": "The instant at which a weather report is created"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAirPollution",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution",
+    "Label": "hasAirPollution",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAssociatedSensor",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource",
+    "Range": "",
+    "Label": "hasAssociatedSensor",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAtmosphericPressure",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure",
+    "Label": "hasAtmosphericPressure",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasCloudCover",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover",
+    "Label": "hasCloudCover",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDewPointTemperature",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature",
+    "Label": "hasDewPointTemperature",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasExteriorTemperature",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature",
+    "Label": "hasExteriorTemperature",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasHumidity",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity",
+    "Label": "hasHumidity",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasObservationTime",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "http://www.w3.org/2006/time#Instant  http://www.w3.org/2006/time#Interval",
+    "Label": "hasObservationTime",
+    "Description": "Denotes the time a weather state has been observed or is forecasted for.@en"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation",
+    "Label": "hasPrecipitation",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSolarIrradiation",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance",
+    "Label": "hasSolarIrradiation",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSource",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource",
+    "Label": "hasSource",
+    "Description": "Links a weather report to the reporting source, either an internet weather service or a local weather sensor"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherCondition",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition",
+    "Label": "hasWeatherCondition",
+    "Description": "Relation of weather states and a one-word description for the observed weather situation"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon",
+    "Label": "hasWeatherPhenomenon",
+    "Description": "Relation between weather states and the phenomena that are observed or forecasted"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherReport",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport",
+    "Label": "hasWeatherReport",
+    "Description": "A specific weather state is reported for a location by a weather report."
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWind",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind",
+    "Label": "hasWind",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#isSourceOf",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "",
+    "Label": "isSourceOf",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherForTimeInterval",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport",
+    "Range": "http://www.w3.org/2006/time#Interval",
+    "Label": "reportsWeatherForTimeInterval",
+    "Description": "This property describes an interval that denotes the time in the future (offset) for which the weather is reported"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherObservation",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "",
+    "Label": "reportsWeatherObservation",
+    "Description": ""
+  },
+  {
+    "Uri": "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "Range": "",
+    "Label": "altitude",
+    "Description": "The WGS84 altitude of a SpatialThing (decimal meters above the local reference ellipsoid). Altitude"
+  },
+  {
+    "Uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "Range": "",
+    "Label": "latitude",
+    "Description": "The WGS84 latitude of a SpatialThing (decimal degrees)."
+  },
+  {
+    "Uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "Range": "",
+    "Label": "longitude",
+    "Description": "The WGS84 longitude of a SpatialThing (decimal degrees)"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasCloudAltitude",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover    https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "http://www.w3.org/2001/XMLSchema#int",
+    "Label": "hasCloudAltitude",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasCloudCoverValue",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover",
+    "Range": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "Label": "hasCloudCoverValue",
+    "Description": "Value is lower than 10"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasDirection",
+    "Description": "Wind direction. Wind direction represented in degrees. Value is lower than 360.0"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasEndTime",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2006/time#Interval",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasEndTime",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasIntensity",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLatitude",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasLatitude",
+    "Description": [
+      -90,
+      90
+    ]
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLongitude",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherState",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasLongitude",
+    "Description": [
+      -180,
+      180
+    ]
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPriority",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport",
+    "Range": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "Label": "hasPriority",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed",
+    "Parent uri": "",
+    "Domain": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasSpeed",
+    "Description": "Wind speed .Wind speed in metres per second (m/s)"
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasStartTime",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2006/time#Interval",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasStartTime",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasTime",
+    "Parent uri": "",
+    "Domain": "http://www.w3.org/2006/time#Instant",
+    "Range": "http://www.w3.org/2001/XMLSchema#float",
+    "Label": "hasTime",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasUnit",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "",
+    "Label": "hasUnit",
+    "Description": ""
+  },
+  {
+    "Uri": "https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue",
+    "Parent uri": "",
+    "Domain": "",
+    "Range": "",
+    "Label": "hasValue",
+    "Description": ""
+  }
+]
